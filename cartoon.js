@@ -46,7 +46,7 @@ console.log(canvas);
 
 c.font = "24px Arial";
 c.fillStyle = "black";
-c.fillText("Hello World !", 800, 150);
+c.fillText("Hello World !", 500, 100);
 
 
 /////////////////////////////// Draw the house  ///////////////////////////////
@@ -54,9 +54,9 @@ c.fillText("Hello World !", 800, 150);
 c.beginPath();
 c.lineWidth = "5";
 c.strokeStyle = "black";  // Black path
-c.moveTo(1240, 910);
-c.lineTo(1355, 800); 
-c.lineTo(1480, 910); 
+c.moveTo(840, 410);
+c.lineTo(955, 320); 
+c.lineTo(1080, 410); 
 
 // Set background color for roof
 c.fillStyle = "#4c4c4c";
@@ -65,23 +65,23 @@ c.fill();
 //House Walls
 c.stroke();  
 c.fillStyle = "black";
-c.fillRect(1250, 900, 220, 150);
+c.fillRect(845, 410, 230, 140);
 c.fillStyle = "white";
-c.fillRect(1270, 940, 50, 50);
-c.fillRect(1335, 940, 50, 100);
-c.fillRect(1400, 940, 50, 50);
+c.fillRect(860, 440, 50, 50);
+c.fillRect(930, 440, 50, 100);
+c.fillRect(1010, 440, 50, 50);
 
 // Chimney
 c.fillStyle = "gray";
-c.fillRect(1420, 820, 40, 80);
-c.strokeRect(1420, 820, 40, 80);
+c.fillRect(1015, 315, 40, 80);
+c.strokeRect(1015, 315, 40, 80);
 
 // Smoke
 c.beginPath();
-c.fillStyle = "rgba(200, 200, 200, 200)";
-c.arc(1400, 740, 20, 0, Math.PI * 2);
-c.arc(1430, 740, 25, 0, Math.PI * 2);
-c.arc(1460, 740, 20, 0, Math.PI * 2);
+c.fillStyle = "#726E6D";
+c.arc(1000, 260, 20, 0, Math.PI * 2);
+c.arc(1030, 260, 25, 0, Math.PI * 2);
+c.arc(1060, 260, 20, 0, Math.PI * 2);
 
 c.closePath();
 c.fill();
@@ -126,8 +126,8 @@ c.fill();
 // Define the cloud properties
 var cloudColor = "#FFF";
 var cloudRadius = 35;
-var cloudX = 550;
-var cloudY = 380;
+var cloudX = 650;
+var cloudY = 150;
 
 // Draw the cloud
 c.fillStyle = cloudColor;
@@ -145,7 +145,7 @@ c.fill();
         // Arc / Circle 
         c.beginPath();
         c.lineWidth = "5";
-        c.arc(1250, 120, 80, 0, Math.PI * 2, false);
+        c.arc(980, 120, 70, 0, Math.PI * 2, false);
         c.strokeStyle = '#FFE88C';
         c.fillStyle = "yellow";
         c.fill();
@@ -155,7 +155,7 @@ c.fill();
 // Define the cloud properties
 var cloudColor = "#FFF";
 var cloudRadius = 30;
-var cloudX = 1100;
+var cloudX = 1000;
 var cloudY = 180;
 
 
@@ -174,7 +174,7 @@ c.fill();
 // Define the cloud properties
 var cloudColor = "#FFF";
 var cloudRadius = 30;
-var cloudX = 1320;
+var cloudX = 400;
 var cloudY = 280;
 
 // Draw the cloud
@@ -194,7 +194,7 @@ c.fill();
 
 // Tree 1  //////////////////////////
 var treeX = 600;
-var treeY = 1070;
+var treeY = 565;
 var trunkColor = "#663300";
 var leavesColor = "#339933";
 var trunkWidth = 30;
@@ -219,8 +219,8 @@ c.closePath();
 c.fill();
 
 // Tree 2 /////////////////////////
-var treeX = 850;
-var treeY = 1070;
+var treeX = 350;
+var treeY = 565;
 var trunkColor = "#663300";
 var leavesColor = "#339933";
 var trunkWidth = 30;
@@ -254,12 +254,12 @@ c.fill();
 c.lineWidth = "2";
 c.strokeStyle = "black";  // Black outline
 c.fillStyle = "#ccc";     // Gray fill color
-c.moveTo(700, 980);
-c.lineTo(650, 1020);
-c.lineTo(680, 1100);
-c.lineTo(750, 1100);
-c.lineTo(800, 1000);
-c.lineTo(800, 990);
+c.moveTo(450, 480);
+c.lineTo(400, 520);
+c.lineTo(430, 600);
+c.lineTo(500, 600);
+c.lineTo(550, 500);
+c.lineTo(550, 490);
 c.closePath();
 c.stroke();
 c.fill();
@@ -268,12 +268,12 @@ c.fill();
 c.lineWidth = "2";
 c.strokeStyle = "black";  // Black outline
 c.fillStyle = "#ccc";     // Gray fill color
-c.moveTo(870, 1000);
-c.lineTo(860, 1080);
-c.lineTo(880, 1150);
-c.lineTo(980, 1130);
-c.lineTo(920, 1000);
-c.lineTo(920, 990);
+c.moveTo(670, 480);
+c.lineTo(660, 520);
+c.lineTo(680, 600);
+c.lineTo(780, 600);
+c.lineTo(720, 500);
+c.lineTo(720, 490);
 c.closePath();
 c.stroke();
 c.fill();

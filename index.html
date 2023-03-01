@@ -2,7 +2,8 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Canvas Resize</title>
+    <title>Cartoon</title>
+
     <style type="text/css">
       canvas {
         border: 1px solid black;
@@ -12,50 +13,24 @@
         margin: 0;
       }
     </style>
+
+      <style>
+    .button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+  </style>
+
   </head>
 
   <body>
+    <canvas id="myCanvas" width="1200" height="600"></canvas>
+    <script src="cartoon.js"</script></script> 
 
-    <style>
-  h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 30px;
-  }
+   <button class="button">Go Back!</button>
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column; /* new */
-  align-items: center; /* new */
-}
 
-li {
-  margin-bottom: 20px; /* changed from margin-right to margin-bottom */
-}
-
-  a {
-    color: #333;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: bold;
-    transition: all 0.2s ease-in-out;
-  }
-
-  a:hover {
-    color: #f00;
-  }
-</style>
-
-<h1>My Portfolio</h1>
-<ul>
-  <li><a href="https://cs-guram.github.io/gkPortfolio/">Link 1 Cartoon</a></li>
-  <li><a href="#">Link 2</a></li>
-</ul>
-    
-    <script src="index.js"</script></script> 
   </body>
 </html>
+
